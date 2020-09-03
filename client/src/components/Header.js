@@ -2,17 +2,23 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 class Header extends Component {
+  renderContent() {
+    switch (this.props.auth) {
+      case null:
+        return "Still deciding";
+      case false:
+        return "Im logged in";
+      default:
+        return "Im logged in";
+    }
+  }
+
   render() {
-    console.log(this.props);
     return (
       <nav>
         <div className="nav-wrapper">
           <a className="left brand-logo">Emaily</a>
-          <ul className="right">
-            <li>
-              <a>Login with Google</a>
-            </li>
-          </ul>
+          <ul className="right">{this.renderContent()}</ul>
         </div>
       </nav>
     );
