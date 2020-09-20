@@ -8,6 +8,8 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 import App from "./components/App";
 import reducers from "./reducers";
+
+//Development only axios helpers!
 import axios from "axios";
 window.axios = axios;
 

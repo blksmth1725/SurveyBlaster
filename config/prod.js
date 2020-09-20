@@ -6,6 +6,7 @@ module.exports = {
   stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
   stripeSecretKey: process.env.STRIPE_SECRET_KEY,
   sendGridKey: process.env.SEND_GRID_KEY,
+  redirectDomain: process.env.REDIRECT_DOMAIN,
 };
 
 // clientID: "685896259857 - veahra58th6s5icm7hundanfgu5rumu7.apps.googleusercontent.com;"
