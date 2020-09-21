@@ -5,7 +5,10 @@ const Dashboard = () => {
   return (
     <div>
       Dashboard
-      <div className="fixed-action-button">
+      <div
+        className="fixed-action-button"
+        style={{ marginTop: "320px", marginLeft: "690px" }}
+      >
         <Link
           to="/surveys/new"
           className="btn-floating btn-large waves-effect waves-light #26a69a"
